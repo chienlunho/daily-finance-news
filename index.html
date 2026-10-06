@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f2eb">
+  <title>今日財經焦點｜2026.10.06</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #18354d;
+      --muted: #547086;
+      --paper: #edf7fc;
+      --card: #ffffff;
+      --line: #cfe3ef;
+      --accent: #d28b00;
+      --accent-soft: #fff0b8;
+      --blue: #23658c;
+      --shadow: 0 8px 24px rgba(35, 101, 140, .06);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: system-ui, -apple-system, "Segoe UI", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+      font-size: 17px;
+      line-height: 1.7;
+    }
+    a { color: inherit; }
+    .wrap { width: min(100% - 36px, 940px); margin: 0 auto; }
+    header { padding: 58px 0 38px; }
+    .eyebrow { margin: 0 0 13px; color: var(--accent); font-size: .77rem; font-weight: 750; letter-spacing: .17em; }
+    h1 {
+      max-width: 760px;
+      margin: 0;
+      font-family: Georgia, "Noto Serif TC", "Songti TC", "PMingLiU", serif;
+      font-size: clamp(2.7rem, 11vw, 5.4rem);
+      font-weight: 500;
+      line-height: 1.08;
+      letter-spacing: -.055em;
+    }
+    .lede { max-width: 600px; margin: 20px 0 0; color: #34566c; font-size: 1.04rem; }
+    .meta-row { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 25px; }
+    .pill { display: inline-flex; align-items: center; min-height: 34px; padding: 4px 11px; border: 1px solid var(--line); border-radius: 999px; background: rgba(255,255,255,.82); color: #315773; font-size: .8rem; font-weight: 650; }
+    .toolbar { display: flex; gap: 9px; overflow-x: auto; padding: 4px 0 30px; scrollbar-width: none; }
+    .toolbar::-webkit-scrollbar { display: none; }
+    .toolbar a { flex: 0 0 auto; padding: 8px 14px; border: 1px solid var(--line); border-radius: 999px; background: transparent; color: #235f83; text-decoration: none; font-size: .88rem; font-weight: 700; transition: background-color .18s ease, border-color .18s ease; }
+    .toolbar a:hover { background: #fff8df; border-color: #e6c85e; }
+    .toolbar a:focus-visible, .story-link:focus-visible { outline: 3px solid #e2b51b; outline-offset: 3px; }
+    .section-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin: 22px 0 17px; padding-bottom: 9px; border-bottom: 1px solid var(--line); }
+    h2 { margin: 0; font-family: Georgia, "Noto Serif TC", "Songti TC", "PMingLiU", serif; font-size: 1.55rem; font-weight: 500; letter-spacing: -.025em; }
+    .section-head span { color: var(--muted); font-size: .78rem; letter-spacing: .08em; }
+    .stories { display: grid; gap: 12px; }
+    .story { display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: 13px; padding: 18px 16px; border: 1px solid rgba(229,217,199,.72); border-radius: 13px; background: var(--card); box-shadow: var(--shadow); }
+    .number { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; background: var(--accent-soft); color: #705300; font-weight: 800; font-size: .83rem; }
+    .category { display: block; margin: 0 0 5px; color: #336986; font-size: .73rem; font-weight: 800; letter-spacing: .08em; }
+    h3 { margin: 0; font-size: 1.04rem; line-height: 1.5; font-weight: 720; letter-spacing: -.015em; }
+    .summary { margin: 8px 0 12px; color: #36566c; font-size: .92rem; line-height: 1.72; }
+    .story-foot { display: flex; align-items: center; justify-content: space-between; gap: 10px; color: var(--muted); font-size: .76rem; }
+    .story-link { color: #245f87; font-weight: 800; text-decoration-thickness: 1px; text-underline-offset: 3px; white-space: nowrap; }
+    .story-link:hover { color: #12496f; }
+    .note { margin: 34px 0 42px; padding: 17px 18px; border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 3px 12px 12px 3px; background: #fff7d8; color: #344f62; font-size: .86rem; }
+    footer { padding: 0 0 34px; color: var(--muted); font-size: .76rem; }
+    @media (min-width: 680px) {
+      header { padding-top: 76px; padding-bottom: 47px; }
+      .stories { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 15px; }
+      .story { align-content: start; padding: 20px 18px; }
+      .section-head { margin-top: 27px; }
+    }
+    @media (max-width: 380px) {
+      .wrap { width: min(100% - 28px, 940px); }
+      .story { grid-template-columns: 34px minmax(0, 1fr); gap: 10px; padding: 15px 12px; }
+      .story-foot { font-size: .72rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .toolbar a { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <p class="eyebrow">MARKET BRIEF · TAIWAN</p>
+    <h1>今日財經焦點</h1>
+    <p class="lede">用幾分鐘掌握台股、企業與國際市場今天值得留意的消息。</p>
+    <div class="meta-row"><span class="pill">更新日期｜2026 年 10 月 6 日</span><span class="pill">編輯整理｜台灣與國際</span></div>
+  </header>
+  <main class="wrap">
+    <nav class="toolbar" aria-label="新聞分類">
+      <a href="#taiwan">台灣市場</a><a href="#global">國際市場</a><a href="#about">整理說明</a>
+    </nav>
+
+    <section id="taiwan" aria-labelledby="taiwan-title">
+      <div class="section-head"><h2 id="taiwan-title">台灣市場</h2><span>01—06</span></div>
+      <div class="stories">
+        <article class="story"><div class="number">01</div><div><span class="category">台股收盤</span><h3>台股收漲 110 點，五萬點關卡近在眼前</h3><p class="summary">加權指數收在 49,822.55 點，盤中最高一度逼近五萬點；台積電收 2,585 元。量能放大後出現賣壓，尾盤再回到平盤之上。</p><div class="story-foot"><span>經濟日報 · 10/06</span><a class="story-link" href="https://udn.com/news/story/7251/9797863?from=udn-relatednews_ch2" target="_blank" rel="noopener noreferrer">閱讀原文 ↗</a></div></div></article>
+        <article class="story"><div class="number">02</div><div><span class="category">盤中焦點</span><h3>台積電、聯發科回檔，指數高檔震盪</h3><p class="summary">台股早盤曾衝至 49,968 點，距五萬點只差一步，之後半導體權值股走弱、指數翻黑，呈現高檔多空拉鋸。</p><div class="story-foot"><span>中央社 CNA · 10/06</span><a class="story-link" href="https://www.cna.com.tw/news/afe/202610060046.aspx" target="_blank" rel="noopener noreferrer">閱讀原文 ↗</a></div></div></article>
+        <article class="story"><div class="number">03</div><div><span class="category">企業營收</span><h3>鴻海 9 月營收首度突破兆元</h3><p class="summary">鴻海公布 9 月合併營收約 1.158 兆元，創單月新高；公司營運受 AI 伺服器與消費電子需求帶動，後續仍需觀察季報表現。</p><div class="story-foot"><span>經濟日報 · 10/05</span><a class="story-link" href="https://money.udn.com/money/story/5710/9795876?from=edn_hotestlist_storybottom" target="_blank" rel="noopener noreferrer">閱讀原文 ↗</a></div></div></article>
+        <article class="story"><div class="number">04</div><div><span class="category">台積電</span><h3>台積電股價續創高，市場聚焦法說會</h3><p class="summary">台積電股價近期走強，市場關注即將到來的法說會對先進製程、資本支出與 AI 需求的說明；相關預期仍待公司正式揭露。</p><div class="story-foot"><span>經濟日報 · 10/06</span><a class="story-link" href="https://money.udn.com/money/story/5607/9796800?from=edn_next_story" target="_blank" rel="noopener noreferrer">閱讀原文 ↗</a></div></div></article>
+        <article class="story"><div class="number">05</div><div><span class="category">投資動向</span><h3>外資大幅買超台股，ETF 也受關注</h3><p class="summary">外資前一交易日買超逾 718 億元，規模居今年前段班，並加碼主動式 ETF。單日資金流向不代表後續趨勢，仍可留意持續性。</p><div class="story-foot"><span>中央社 CNA · 10/05</span><a class="story-link" href="https://www.cna.com.tw/news/afe/202610050276.aspx" target="_blank" rel="noopener noreferrer">閱讀原文 ↗</a></div></div></article>
+        <article class="story"><div class="number">06</div><div><span class="category">產業投資</span><h3>遠東集團規劃 125 億元醫療園區</h3><p class="summary">遠東集團與新北市簽約，規劃在板橋打造結合醫療、長照與智慧科技服務的園區，預計分階段興建，長期效益仍待後續落實。</p><div class="story-foot"><span>經濟日報 · 10/06</span><a class="story-link" href="https://money.udn.com/money/story/5607/9796800?from=edn_next_story" target="_blank" rel="noopener noreferrer">閱讀原文 ↗</a></div></div></article>
+      </div>
+    </section>
+
+    <section id="global" aria-labelledby="global-title">
+      <div class="section-head"><h2 id="global-title">國際市場</h2><span>07—10</span></div>
+      <div class="stories">
+        <article class="story"><div class="number">07</div><div><span class="category">美股</span><h3>那斯達克再創收盤新高，科技股領漲</h3><p class="summary">美股週一收高，標普 500 接近歷史高點，那斯達克刷新收盤紀錄；大型科技股提供支撐，市場同時等待企業財報與利率線索。</p><div class="story-foot"><span>美聯社 AP · 10/06</span><a class="story-link" href="https://apnews.com/article/e8285ec7afbe81e9df277e8ee2127982" target="_blank" rel="noopener noreferrer">閱讀原文 ↗</a></div></div></article>
+        <article class="story"><div class="number">08</div><div><span class="category">亞洲股市</span><h3>亞洲股市漲跌互見，油價暫時持穩</h3><p class="summary">週二亞股表現分歧：日經與港股上揚、韓股走低，台股小幅回落。中東情勢仍帶來不確定性，國際油價先行持穩。</p><div class="story-foot"><span>美聯社 AP · 10/06</span><a class="story-link" href="https://apnews.com/article/e8285ec7afbe81e9df277e8ee2127982" target="_blank" rel="noopener noreferrer">閱讀原文 ↗</a></div></div></article>
+        <article class="story"><div class="number">09</div><div><span class="category">債券與匯率</span><h3>美債殖利率高檔，美元走強、油價回落</h3><p class="summary">美股科技股上漲之際，美國公債殖利率仍處多年高位，美元兌歐元走強，油價則回落。利率與能源成本仍是市場定價的重要變數。</p><div class="story-foot"><span>Reuters · 10/05</span><a class="story-link" href="https://www.marketscreener.com/news/nasdaq-hits-record-as-dollar-and-treasury-yields-climb-oil-prices-ease-ce785dd8db8efe27" target="_blank" rel="noopener noreferrer">閱讀原文 ↗</a></div></div></article>
+        <article class="story"><div class="number">10</div><div><span class="category">歐洲匯市</span><h3>歐元跌至 17 個月低點，法國財政受關注</h3><p class="summary">市場憂心法國債務與政治僵局，法債遭遇賣壓，歐元一度跌至 17 個月低點。匯率與歐洲公債利差後續變化值得留意。</p><div class="story-foot"><span>中央社 CNA · 10/06</span><a class="story-link" href="https://www.cna.com.tw/news/afe/202610060036.aspx" target="_blank" rel="noopener noreferrer">閱讀原文 ↗</a></div></div></article>
+      </div>
+    </section>
+
+    <aside class="note" id="about"><strong>整理說明</strong><br>本頁是 2026 年 10 月 6 日的編輯選讀，依當日報導整理，不是依網站點閱數或交易量計算的熱門排行。摘要為簡述，詳細內容以各新聞來源為準；市場資訊會變動，請以最新報導為準。</aside>
+    <footer>新聞內容與著作權屬原媒體所有。本頁提供標題、簡述及原文連結。</footer>
+  </main>
+</body>
+</html>
+
+
+
